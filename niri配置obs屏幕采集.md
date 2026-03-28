@@ -5,6 +5,16 @@
 - Wayland Compositor：Niri
 - 已安装：PipeWire、WirePlumber
 
+## 前情提要
+最初，为了在 Niri 环境下配置 OBS 屏幕采集，经历了一番波折：  
+- xdg-desktop-portal-wlr，结果因为配置了 slurp选择器导致鼠标无法使用，不得不删除配置回退
+- xdg-desktop-portal-gtk，却发现它在 Niri环境下根本不支持屏幕捕获
+- xdg-desktop-portal-gnome 能够完美工作，但代价是安装了约 200 MB 的 GNOME相关依赖
+- 深入研究发现xdg-desktop-portal-wlr 的问题其实不是后端本身，而是配置了 slurp选择器！
+ 
+[历史版本](https://github.com/alu-deak/blog/blob/84653e65616ce2cf61ebaa54e3ca6a42bb9ff799/niri%E9%85%8D%E7%BD%AEobs%E5%B1%8F%E5%B9%95%E9%87%87%E9%9B%86.md)  
+[Diff](https://github.com/alu-deak/blog/commit/f102c358ecc1ea737758d727a9af1b4f60bcba5e)
+
 ## 配置步骤
 
 ### 1. 安装依赖
