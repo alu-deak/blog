@@ -1,5 +1,7 @@
 ![Stone Badge](https://stone.professorlee.work/api/stone/alu-deak/blog)
 
+网络上说说就得了，现实中谁不想急头白脸的在readme里养一只石墩子做宠物（
+
 # 你好
 
 你好，陌生人，或者未来的自己。很高兴你能来
